@@ -36,7 +36,8 @@
       height: 100%;
       z-index: -1;
       pointer-events: none;
-      opacity: 0.7;
+      filter: blur(8px);          /* blurs the 3D canvas */
+      opacity: 0.9;                /* optional: make it slightly more visible */
     }
 
     .glass-header {
@@ -93,6 +94,8 @@
       margin: 0 auto;
       position: relative;
       z-index: 1;
+      background-color: rgba(10, 15, 30, 0.3); /* dark overlay behind text */
+      backdrop-filter: blur(2px);               /* already present, but you can increase */
     }
 
     .hero {
@@ -390,6 +393,7 @@
       background: #38bdf8;
       color: #0f172a;
     }
+
   </style>
 </head>
 <body>
